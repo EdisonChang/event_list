@@ -1,7 +1,6 @@
 package com.edison.eventlist.vo;
 
 import java.util.Date;
-import javax.persistence.Column;
 
 public class EventsVO {
 
@@ -10,10 +9,10 @@ public class EventsVO {
   private String description;
 
   private Date startDate;
-  
+
   private Date endDate;
 
-  private String catagory;
+  private String category;
 
   public String getTitle() {
     return title;
@@ -47,11 +46,11 @@ public class EventsVO {
     this.endDate = endDate;
   }
 
-  public String getCatagory() {
-    return catagory;
+  public String getCategory() {
+    return category;
   }
 
-  public void setCatagory(String catagory) {
-    this.catagory = catagory;
+  public void setCategory(String category) {
+    this.category = category;
   }
 }

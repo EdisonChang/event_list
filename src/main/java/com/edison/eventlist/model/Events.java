@@ -3,6 +3,7 @@ package com.edison.eventlist.model;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 public class Events {
 
   @Id
+  @GeneratedValue
   @Column(name = "id")
   private Integer id;
 
@@ -26,8 +28,8 @@ public class Events {
   @Column(name = "end_date")
   private Date endDate;
 
-  @Column(name = "catagory")
-  private String catagory;
+  @Column(name = "category")
+  private String category;
 
   public Integer getId() {
     return id;
@@ -69,11 +71,11 @@ public class Events {
     this.endDate = endDate;
   }
 
-  public String getCatagory() {
-    return catagory;
+  public String getCategory() {
+    return category;
   }
 
-  public void setCatagory(String catagory) {
-    this.catagory = catagory;
+  public void setCategory(String category) {
+    this.category = category;
   }
 }
